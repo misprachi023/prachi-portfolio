@@ -7,13 +7,25 @@ import {
 	Box,
 	Flex,
 	Heading,
+	Button,
 	Link,
 	useBreakpointValue,
 } from "@chakra-ui/react";
 import HamburgerMenu from "./HamburgerMenu";
-
+import resume from "./PrachiMishra-FullStackWebDeveloper-V3Hj.pdf"
 
 export default function Navbar() {
+
+
+
+
+
+	function showResume() {
+		window.open(
+			"https://drive.google.com/file/d/1EvCaXJn6I-uoyWnMvhLC5OC1_9YVweWK/view?usp=sharing",
+			"_blank"
+		);
+	}
 	const isMobile = useBreakpointValue({
 		base: true,
 		md: true,
@@ -60,7 +72,19 @@ export default function Navbar() {
 					<a href="#contact" style={{ "--i": 6 }} className="big-nav">
 						Contact
 					</a>
+					
 				</nav> : null}
+				<a
+						href={resume}
+						
+						target="_blank"
+						download={"Prachi-Mishra-Resume.pdf"}
+						onClick={showResume}
+					>
+					
+					
+					
+					<Button >Resume</Button></a>
 
 			
 			

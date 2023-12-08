@@ -59,7 +59,8 @@
 	/* background:url("WhatsApp Image 2023-08-23 at 21.58.39.jpg") no-repeat; */
   
 	background-size: cover;
-	background-image: url("https://img.freepik.com/free-photo/view-neon-illuminated-gaming-desk-setup-with-keyboard_23-2149529361.jpg?w=1380&t=st=1701582652~exp=1701583252~hmac=eafe4281fec4f12c32281ca73399d45d6ec208f75ccd73af32549de232755e46");
+	background-image: url("https://images.unsplash.com/photo-1621743018966-29194999d736?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGdhbWluZyUyMGRlc2t8ZW58MHx8MHx8fDA%3D");
+	object-fit: cover;
 	align-items: center;
 	padding: 70px 10% 0;
 }

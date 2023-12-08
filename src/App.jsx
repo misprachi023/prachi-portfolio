@@ -5,12 +5,14 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import "boxicons/css/boxicons.min.css";
 import Navbar from "./sections/navbar";
-import myimage from './assets/WhatsApp Image 2023-11-29 at 20.13.44_e7e714b4.jpg'
+import myimage from './assets/WhatsApp Image 2023-11-29 at 20.13.44_e7e714b4.png'
 import React from "react";	
-import screenshot from './assets/Screenshot 2023-11-17 165121.png'		
+import resume from "./PrachiMishra-FullStackWebDeveloper-V3Hj.pdf"
 import GithubCalender from "./sections/GithubCalender";
 import HamburgerMenu from "./sections/HamburgerMenu";
-import PrachiMishraFullStackWebDeveloper from "../src/assets/PrachiMishraFullStackWebDeveloper.pdf";
+import { Card,Box, Container } from "@chakra-ui/react";
+import { Heading } from "@chakra-ui/react";
+import { Projects } from "./sections/Projects";
 const App = () => {
 	// var Typed = new Typed(".text",{
 	// 	strings:["Frontend Developer" , "Web Developer"],
@@ -95,14 +97,14 @@ const App = () => {
 						</a>
 					</div>
 					<a
-						href={PrachiMishraFullStackWebDeveloper}
+						href={resume}
 						className="btn-box"
 						target="_blank"
-						download={PrachiMishraFullStackWebDeveloper}
+						download={"Prachi-Mishra-Resume.pdf"}
 						onClick={showResume}
 					>
 						Resume
-					</a>
+					</a>	
 				</div>
 
 				<span className="home-imgHover"></span>
@@ -292,55 +294,8 @@ const App = () => {
 				</div>
 			</section>
 
-			<section>
-				<div id="project">
-					<div className="main-text" id="project">
-						<h2>
-							Latest <span>Project</span>
-						</h2>
-						<div className="Portfolio-content">
-							<br />
-							<div className="row">
-								<img src={screenshot} alt="" />
-								<div className="layer">
-									<h5>Airtable Website</h5>
-									<p>
-										This is an Airtable clone, a cloud-based collaboration
-										platform that combines the simplicity of a spreadsheet with
-										the complexity of a relational database. It allows users to
-										create customizable databases, or "bases," to organize and
-										store information.
-									</p>
-									<p>Teck Stack: HTML, CSS, Javascript, React, Chakra UI</p>
-									<div className="ico">
-										<a
-											href="https://aritable-icgd9nfub-prachi-mishra.vercel.app/"
-											target="_blank"
-										>
-											<i
-												className="bx bx-link-external"
-												style={{ color: "#00eeff" }}
-											></i>
-										</a>
-										<a
-											href="https://github.com/misprachi023/Airtable"
-											target="_blank"
-										>
-											<i
-												className="bx bxl-github"
-												style={{ color: "#00eeff" }}
-											></i>
-										</a>
-									</div>
-								</div>
-							</div>
-							<br />
-							{/* Add other project details here */}
-						</div>
-					</div>
-				</div>
-			</section>
-
+             <Projects/>
+		
 			<section className="contact" id="contact">
 				<div className="contact-text">
 					<h2>
@@ -383,7 +338,7 @@ const App = () => {
 			</section>
 
 			<div className="last-text">
-				<p>Developed with ❤️ by Prachi Mishra @ 2023</p>
+				<p>Developed with ❤️ by Prachi Mishra @ 2023</p>	
 			</div>
 
 			<a href="#" className="top">

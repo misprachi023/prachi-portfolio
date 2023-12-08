@@ -1,4 +1,4 @@
-import  {useDisclosure, IconButton,Link, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react'
+import  {useDisclosure,Box,Button, IconButton,Link, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react'
   import {HamburgerIcon } from '@chakra-ui/icons'
 
 import React from 'react'
@@ -12,27 +12,30 @@ export default function HamburgerMenu (){
   
     return (
      
-       <Menu color={'black'}>
+       <Menu  closeOnBlur='true' closeOnSelect='true' color={'black'}>
   <MenuButton
-  background={'white'}
+     backgroundColor={'white'}
     as={IconButton}
     aria-label='Options'
     icon={<HamburgerIcon />}
     variant='outline'
   />
-  <MenuList color={'black'}>
-    <MenuItem  >  
-      <Link href='#home'>Home</Link>
-    </MenuItem>
-    <MenuItem  >
-    <Link href='#about'>About</Link>
-    </MenuItem>
-    <MenuItem  >
-    <Link href='#projects'>Projects</Link>
-    </MenuItem>
-    <MenuItem  >
-    <Link href='#contact'>Contact</Link>
-    </MenuItem>   
+  <MenuList position={'fixed'} right={'0'} width='30%'  color={'black'}
+  textAlign={'center'}
+  >
+   
+      <Link href='#home'><Button variant ="ghost" width={'100%'}>Home</Button></Link>
+    
+  
+    <Link href='#about'><Button  variant ="ghost" width={'100%'}>About</Button></Link>
+    
+
+    <Link href='#projects'><Button variant ="ghost" width={'100%'}>Projects</Button></Link>
+
+  
+    <Link href='#contact'><Button variant ="ghost"  width={'100%'}>Contact</Button></Link>
+    <Link href='#education'><Button variant ="ghost"  width={'100%'}>Education</Button></Link>
+ 
   </MenuList>
 </Menu>
     )
