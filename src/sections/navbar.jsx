@@ -22,7 +22,7 @@ export default function Navbar() {
 
 	function showResume() {
 		window.open(
-			"https://drive.google.com/file/d/1EvCaXJn6I-uoyWnMvhLC5OC1_9YVweWK/view?usp=sharing",
+			"https://drive.google.com/file/d/1HH2VZMpM666Q2qvL1FaiJvKHWWsye2iy/view?usp=sharing",
 			"_blank"
 		);
 	}
