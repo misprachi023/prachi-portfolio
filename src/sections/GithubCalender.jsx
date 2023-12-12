@@ -36,7 +36,7 @@ export default function GithubCalender() {
         <img
           id="github-streak-stats"
           width="100%"
-          src="https://github-readme-streak-stats.herokuapp.com/?user=nsdsahil&theme=transparent&hide_border=true&title_color=white&text_color=#32de84&sideNums=white&sideLabels=white&ring=white&fire=white&currStreakLabel=white&currStreakNum=white"
+          src="https://github-readme-streak-stats.herokuapp.com/?user=misprachi023&theme=transparent&hide_border=true&title_color=white&text_color=#32de84&sideNums=white&sideLabels=white&ring=white&fire=white&currStreakLabel=white&currStreakNum=white"
           alt=""
         />
       </Box>
