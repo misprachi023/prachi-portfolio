@@ -5,15 +5,9 @@ import GitHubCalendar from "react-github-calendar";
 export default function GithubCalender() {
   return (
     <>
-      {/* <Flex overflowX={'hidden'} marginTop={'5%'}  justifyContent={'center'}>
-     
-        <GitHubCalendar
-          className="react-activity-calendar"
-          color={"#32de84"}
-          width='100%'
-          username="misprachi023"
-        />    
-      </Flex> */}
+      <h1 className="sub-title">
+				GitHub <span>Stats</span>
+			</h1>
      
      <Box display={['block', 'block', 'flex', 'flex', 'flex']} margin={'auto'} width={"80%"}>
       <Box width={'50%'}>

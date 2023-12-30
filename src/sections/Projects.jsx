@@ -36,11 +36,15 @@ export const Projects = (props) => {
 				
 				textAlign={"center"}
 				id="project"
-				marginTop={"10%"}
-				marginBottom={"5%"}
+				// marginTop={"10%"}
+				// marginBottom={"5%"}
 				size={["sm", "md", "lg", "lg", "xl", "3xl"]}
 			>
-				Latest <span style={{color:'#0ef'}}>Projects</span>
+				<div className="about-text">
+					<h2>
+						Latest <span>Project</span>
+					</h2>
+					</div>
 			</Heading>
 
 			<Card
@@ -52,7 +56,7 @@ export const Projects = (props) => {
 				size={"lg"}
 			>
 				<Image src={screenshot} />
-				<Box padding={"10%"}>
+				<Box padding={"5%"}>
 					<Heading>
 						Airtable (clone)
 						<Badge ml="1" fontSize="0.5em" variant="solid" colorScheme="blue">
@@ -61,30 +65,7 @@ export const Projects = (props) => {
 					</Heading>
 					<List size={["sm", "md", "lg", "lg", "xl", "3xl"]} spacing={3}>
 						<ListItem>
-							This is an Airtable clone, a cloud-based collaboration platform
-							that combines the simplicity of a spreadsheet with the complexity
-							of a relational database. It allows users to create customizable
-							databases, or "bases," to organize and store information.
-						</ListItem>
-						<ListItem>
-							<ListIcon as="MdCheckCircle" color="green.500" />
-							Login/Logout functionality
-						</ListItem>
-						<ListItem>
-							<ListIcon as="MdCheckCircle" color="green.500" />
-							Tow different pages that are free or with pass
-						</ListItem>
-						{/* You can also use custom icons from react-icons */}
-						<ListItem>
-							<ListIcon as="MdCheckCircle" color="green.500" />
-							Responsive Website design
-						</ListItem>
-						<ListItem>
-							<ListIcon as="MdCheckCircle" color="green.500" />
-							Click on Demo live button to see the website live
-						</ListItem>
-						<ListItem>
-							<ListIcon as="MdCheckCircle" color="green.500" />Teck Stack
+							Teck Stack
 							<Badge ml="1" fontSize="0.8em" variant="solid" colorScheme="blue">
 							Html
 						</Badge>
@@ -105,7 +86,7 @@ export const Projects = (props) => {
 						<Link isExternal="true" href="https://github.com/misprachi023/Airtable">
 							<Button
 								backgroundColor={"black"}
-								color={"white"}
+								color={"cyan"}
 								variant="outline"
 							>
 								Git Hub
@@ -117,7 +98,7 @@ export const Projects = (props) => {
 						>
 							<Button
 								backgroundColor={"black"}
-								color={"white"}
+								color={"cyan"}
 								variant="outline"
 							>
 								Live Demo

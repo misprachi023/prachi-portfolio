@@ -84,7 +84,7 @@ export default function Navbar() {
 					
 					
 					
-					<Button >Resume</Button></a>
+					<Button color={"black"} backgroundColor={"cyan"} >Resume</Button></a>
 
 			
 			
