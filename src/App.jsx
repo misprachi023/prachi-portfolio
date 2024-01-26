@@ -5,9 +5,9 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import "boxicons/css/boxicons.min.css";
 import Navbar from "./sections/navbar";
-import myimage from './assets/WhatsApp Image 2023-11-29 at 20.13.44_e7e714b4.png'
-import React from "react";	
-import resume from "./PrachiMishra-FullStackWebDeveloper-V3Hj.pdf"
+import myimage from './assets/1706251972213__480.png'
+import React from "react";
+import resume from "./PrachiMishraResume.pdf"
 import GithubCalender from "./sections/GithubCalender";
 import HamburgerMenu from "./sections/HamburgerMenu";
 import { Card,Box, Container } from "@chakra-ui/react";
@@ -44,7 +44,7 @@ const App = () => {
 
 	function showResume() {
 		window.open(
-			"https://drive.google.com/file/d/1EvCaXJn6I-uoyWnMvhLC5OC1_9YVweWK/view?usp=sharing",
+			"https://drive.google.com/file/d/198SfFNcpRy5ThzyG9uNv1M-lrypxFoZg/view?usp=sharing",
 			"_blank"
 		);
 	}
@@ -102,7 +102,7 @@ const App = () => {
 						href={resume}
 						className="btn-box"
 						target="_blank"
-						download={"Prachi-Mishra-Resume.pdf"}
+						download={"PrchiMishraResume.pdf"}
 						onClick={showResume}
 					>
 						Resume
