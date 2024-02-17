@@ -3,14 +3,14 @@ import React from "react";
 import { Button, Image } from "@chakra-ui/react";
 import { Box, Flex } from "@chakra-ui/react";
 import { Card, Link, Badge, Heading } from "@chakra-ui/react";
-
-import screenshot from "../assets/Screenshot 2023-11-17 165121.png";
+import HoverVideoPlayer from "react-hover-video-player";
+// import { Player } from "video-react";
+import videoairtable from "../airtable.mp4";
+import boatlife from "../boatlifestyle.mp4";
 import {
 	List,
 	ListItem,
-	ListIcon,
-	OrderedList,
-	UnorderedList,
+	Text,
 } from "@chakra-ui/react";
 
 /**
@@ -49,44 +49,29 @@ export const Projects = (props) => {
 
 			<Card
 				width={["90%", "90%", "80%", "70%", "60%"]}
-				boxShadow={
-					"rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
-				}
+				backgroundColor={"#081b29"}
+				// boxShadow={
+				// 	"rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px"
+				// }
 				margin={"auto"}
 				size={"lg"}
 			>
-				<Image src={screenshot} />
-				<Box padding={"5%"}>
-					<Heading>
-						Airtable (clone)
-						<Badge ml="1" fontSize="0.5em" variant="solid" colorScheme="blue">
-							New
-						</Badge>
-					</Heading>
-					<List size={["sm", "md", "lg", "lg", "xl", "3xl"]} spacing={3}>
-						<ListItem>
-							Teck Stack
-							<Badge ml="1" fontSize="0.8em" variant="solid" colorScheme="blue">
-							Html
-						</Badge>
-						<Badge ml="1" fontSize="0.8em" variant="solid" colorScheme="blue">
-							javascript
-						</Badge>
-						<Badge ml="1" fontSize="0.8em" variant="solid" colorScheme="blue">
-							React
-						</Badge>
-						<Badge ml="1" fontSize="0.8em" variant="solid" colorScheme="blue">
-							Chakra UI
-						</Badge>
-							
-						</ListItem>
-
-					</List>
-					<Box marginTop={"5%"} textAlign={"center"}>
+             <HoverVideoPlayer videoSrc={videoairtable} />
+          
+				<Box marginBottom={"10px"}>
+					<Box borderRadius={"30px"} backgroundColor={"#051129"} padding={"10px"}>
+					<Text fontSize={"25px"} backgroundColor={"#051129"} color={"white"}  borderRadius={"10px"}>Description</Text>
+					{/* about airtable project */}
+					<Text backgroundColor={"#051129"} borderRadius={"10px"} color={"white"}> Airtable is a cloud-based collaborative spreadsheet 
+						app that allows you to create, organize, and share spreadsheets.  </Text>
+						</Box>
+						{/* I want to those button some gap */}
+					<Box  textAlign={"center"} padding={"10px"}  display={"flex"} justifyContent={"space-around"} >
 						<Link isExternal="true" href="https://github.com/misprachi023/Airtable">
 							<Button
-								backgroundColor={"black"}
-								color={"cyan"}
+								backgroundColor={"cyan"}
+								_hover={{ backgroundColor: "white" }}
+								color={"#051129"}
 								variant="outline"
 							>
 								Git Hub
@@ -97,15 +82,86 @@ export const Projects = (props) => {
 							href="https://aritable.vercel.app/"
 						>
 							<Button
-								backgroundColor={"black"}
-								color={"cyan"}
+								backgroundColor={"cyan"}
+								_hover={{ backgroundColor: "white" }}
+								color={"#051129"}
 								variant="outline"
 							>
 								Live Demo
 							</Button>
 						</Link>
 					</Box>
+					<Box backgroundColor={"#051129"} padding={"10px"} borderRadius={"30px"}>
+							<Text textAlign={"center"} fontSize={"25px"} color={"white"} >Tech Stack</Text>
+							<List textAlign={"center"} color={"white"}>
+								<ListItem >
+									HTML
+								</ListItem>
+								<ListItem >
+									CSS 
+								</ListItem>
+								<ListItem>
+									React
+								</ListItem>
+								<ListItem >
+									
+										JavaScript
+									
+								</ListItem>
+							</List>
+						</Box>
 				</Box>
+				<HoverVideoPlayer videoSrc={boatlife} />
+				<Box borderRadius={"30px"} backgroundColor={"#051129"} padding={"10px"}>
+					<Text fontSize={"25px"} backgroundColor={"#051129"} color={"white"}  borderRadius={"10px"}>Description</Text>
+					{/* about boatLifestyle project */}
+					<Text backgroundColor={"#051129"} borderRadius={"10px"} color={"white"}> BoatLifeStyle is an e-commerce web application that allows you to buy and sell  collection of Earbuds, Headphones, Earphones & Wireless Speakers </Text>
+						</Box>
+						<Box  textAlign={"center"} padding={"10px"}  display={"flex"} justifyContent={"space-around"} >
+						<Link isExternal="true" href="https://github.com/misprachi023/BoatLifeStyle">
+							<Button
+								backgroundColor={"cyan"}
+								_hover={{ backgroundColor: "white" }}
+								color={"#051129"}
+								variant="outline"
+							>
+								Git Hub
+							</Button>
+						</Link>
+						<Link
+							isExternal="true"
+							href="https://boat-life-style-nine.vercel.app/"
+						>
+							<Button
+								backgroundColor={"cyan"}
+								_hover={{ backgroundColor: "white" }}
+								color={"#051129"}
+								variant="outline"
+							>
+								Live Demo
+							</Button>
+						</Link>
+					</Box>
+					<Box backgroundColor={"#051129"} padding={"10px"} borderRadius={"30px"}>
+							<Text textAlign={"center"} fontSize={"25px"} color={"white"} >Tech Stack</Text>
+							<List textAlign={"center"} color={"white"}>
+								<ListItem>
+									React
+								</ListItem>
+								<ListItem >
+							      Node js
+									
+								</ListItem>
+								<ListItem >
+								Express js
+								</ListItem>
+								<ListItem >
+								MongoDB
+								</ListItem>
+							</List>
+						</Box>
+
+
 			</Card>
 		</Box>
 	);

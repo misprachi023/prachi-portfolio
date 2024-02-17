@@ -7,7 +7,7 @@ import "boxicons/css/boxicons.min.css";
 import Navbar from "./sections/navbar";
 import myimage from './assets/1706251972213__480.png'
 import React from "react";
-import resume from "./PrachiMishraResume.pdf"
+import resume from "./PrachiResume.pdf"
 import GithubCalender from "./sections/GithubCalender";
 import HamburgerMenu from "./sections/HamburgerMenu";
 import { Card,Box, Container } from "@chakra-ui/react";
@@ -44,7 +44,7 @@ const App = () => {
 
 	function showResume() {
 		window.open(
-			"https://drive.google.com/file/d/198SfFNcpRy5ThzyG9uNv1M-lrypxFoZg/view?usp=sharing",
+			"https://drive.google.com/file/d/19gbzPlqgHJP4yjZ_GjNeN1d9PQcXRb-u/view?usp=sharing",
 			"_blank"
 		);
 	}
@@ -102,7 +102,7 @@ const App = () => {
 						href={resume}
 						className="btn-box"
 						target="_blank"
-						download={"PrchiMishraResume.pdf"}
+						download={"PrachiResume.pdf"}
 						onClick={showResume}
 					>
 						Resume

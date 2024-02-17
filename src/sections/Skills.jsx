@@ -5,7 +5,9 @@ import css from "../assets/css.svg";
 import js from "../assets/js.svg"; 
 import dom from "../assets/dom.svg";
 import react from "../assets/react.svg";
-// import redux from "../assets/redux.svg";
+import mongoDB from "../assets/mongodb.svg";
+import express from "../assets/express.jpg";
+import redux from "../assets/redux.svg";
 import mui from "../assets/material-ui.svg";
 import chakraUi from "../assets/chakra-ui.svg"; 
 import json from "../assets/json.svg";
@@ -13,6 +15,7 @@ import postman from "../assets/postman.svg";
 import git from "../assets/git.svg";
 import bash from "../assets/bash.svg";
 import vsCode from "../assets/vs-code.svg";
+import npm from "../assets/npm.jpg";
 import nodeJs from "../assets/node-js.svg";
 // import npm from "../assets/npm.svg";
 import vite from "../assets/vite.svg";
@@ -26,7 +29,10 @@ const Skills = () => {
     { img: js, name: "JS" },
     { img: dom, name: "DOM" },
     { img: react, name: "React" },
-    // { img: redux, name: "Redux" },
+    { img: mongoDB, name: "MongoDB" },
+    { img: nodeJs, name: "Node JS" },
+    { img: express, name: "Express" },
+    { img: redux, name: "Redux" },
     { img: mui, name: "Material UI" },
     { img: chakraUi, name: "Chakra UI" },
     { img: json, name: "Json" },
@@ -37,8 +43,8 @@ const Skills = () => {
     { img: git, name: "Git" },
     { img: bash, name: "Bash" },
     { img: vsCode, name: "VS Code" },
-    { img: nodeJs, name: "Node JS" },
-    // { img: npm, name: "NPM" },
+    
+    { img: npm, name: "NPM" },
   ]
   return (
     <section id="skills">

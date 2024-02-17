@@ -12,7 +12,7 @@ import {
 	useBreakpointValue,
 } from "@chakra-ui/react";
 import HamburgerMenu from "./HamburgerMenu";
-import resume from "../PrachiMishraResume.pdf";
+import resume from "../PrachiResume.pdf";
 
 export default function Navbar() {
 
@@ -22,7 +22,7 @@ export default function Navbar() {
 
 	function showResume() {
 		window.open(
-			"https://drive.google.com/file/d/198SfFNcpRy5ThzyG9uNv1M-lrypxFoZg/view?usp=sharing",
+			"https://drive.google.com/file/d/19gbzPlqgHJP4yjZ_GjNeN1d9PQcXRb-u/view?usp=sharing",
 			"_blank"
 		);
 	}
