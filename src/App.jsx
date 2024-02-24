@@ -27,10 +27,10 @@ const App = () => {
 	React.useEffect(() => {
 		// Typed.js initialization
 		var options = {
-			strings: ["Frontend Developer", "Web Developer"],
+			strings: ["Frontend Developer", "MERN Developer", "Full Stack Web Developer"],
 			typeSpeed: 100,
 			backSpeed: 100,
-			backDelay: 1000,
+			backDelay: 100,
 			loop: true,
 		};
 
