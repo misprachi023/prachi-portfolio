@@ -1,16 +1,15 @@
 * {
-
 	margin: 0;
 	padding: 0;
-	scroll-behavior: smooth;
 	box-sizing: border-box;
 	font-family: "poppins", sans-serif;
 }
+html{
+	scroll-behavior: smooth;
+}
 
 
-
-
-.header {
+.header{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -596,7 +595,7 @@ form textarea {
 	outline: none;
 	width: 60%;
 	padding: 8px;
-	background: #555557;
+	background: #e6e6e6;
 	color: #000;
 	font-size: 1rem;
 	font-weight: 600;

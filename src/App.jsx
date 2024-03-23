@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import Typed from "typed.js";
 import viteLogo from "/vite.svg";
+import sign from "./assets/signature(1).png";
 import "./App.css";
 import "boxicons/css/boxicons.min.css";
 import Navbar from "./sections/navbar";
@@ -14,6 +15,7 @@ import { Card,Box, Container } from "@chakra-ui/react";
 import { Heading } from "@chakra-ui/react";
 import { Projects } from "./sections/Projects";
 import Skills from "./sections/Skills"
+import Email from "./sections/email";
 
 const App = () => {
 	// var Typed = new Typed(".text",{
@@ -89,14 +91,11 @@ const App = () => {
 						>
 							<i class="bx bxl-github"></i>
 						</a>
-
-						<a
-							href="https://www.snapchat.com/add/prachimis_23?share_id=9ztOO5t9_lM&locale=en-GB"
-							target="_blank"
-							style={{ "--i": 8 }}
-						>
-							<i className="bx bxl-snapchat"></i>
+						<a href="mailto:prachimishra23123@gmail.com" target="_blank">
+							<i className="bx bx-envelope"></i>
 						</a>
+
+						
 					</div>
 					<a
 						href={resume}
@@ -120,8 +119,10 @@ const App = () => {
 					/>
 				</div>
 				<div className="about-text">
+
 					<h2>
-						About <span>Me</span>
+						About <span>Me</span> 
+						
 					</h2>
 					<h4>Full Stack Developer!</h4>
 					<p>
@@ -135,6 +136,7 @@ const App = () => {
 					<a href="#" className="btn-box">
 						More About Me
 					</a>
+					
 				</div>
 			</section>
 			<GithubCalender />
@@ -215,12 +217,7 @@ const App = () => {
 					</h2>
 					<h3>Let's work Together</h3>
 					<div className="contact-icons">
-						<a
-							href="https://www.snapchat.com/add/prachimis_23?share_id=9ztOO5t9_lM&locale=en-GB"
-							target="_blank"
-						>
-							<i className="bx bxl-snapchat"></i>
-						</a>
+						
 						<a href="tel:7697271872" target="_blank">
 							<i className="bx bx-phone"></i>
 						</a>
@@ -233,10 +230,17 @@ const App = () => {
 						>
 							<i className="bx bxl-linkedin"></i>
 						</a>
+						<a
+							href="https://github.com/misprachi023"
+							target="_blank"
+							style={{ "--i": 7 }}
+						>
+							<i class="bx bxl-github"></i>
+						</a>
 					</div>
 				</div>
 				<div className="contact-form">
-					<form action="">
+					{/* <form action="">
 						<input type="text" placeholder="Enter Your Name" required />
 						<input type="email" placeholder="Enter Your Email" required />
 						<textarea
@@ -245,7 +249,8 @@ const App = () => {
 							placeholder="Enter Your Message"
 						></textarea>
 						<input type="submit" value="submit" className="send" />
-					</form>
+					</form> */}
+					<Email/>
 				</div>
 			</section>
 
@@ -256,6 +261,7 @@ const App = () => {
 			<a href="#" className="top">
 				<i className="bx bx-up-arrow-alt"></i>
 			</a>
+			
 		</>
 	);
 };

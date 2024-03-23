@@ -11,6 +11,7 @@ import {
 	Link,
 	useBreakpointValue,
 } from "@chakra-ui/react";
+import sign from "../assets/signature(1).png";
 import HamburgerMenu from "./HamburgerMenu";
 import resume from "../PrachiResume.pdf";
 
@@ -42,7 +43,7 @@ export default function Navbar() {
 			zIndex={"23"}
 			position={"fixed"}	
 			width={"100%"}
-			top={"0"} 
+			top={"0"}  
 			height={"4rem"}
 			boxShadow={
 				 "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px"
@@ -50,9 +51,10 @@ export default function Navbar() {
 			alignItems={"center"}
 			justifyContent={"space-around"}
 		>
-			<Box >
-				<Heading size={['md','sm','md','xl','2xl']}>Portfolio</Heading></Box>		
-
+			<Box display={"flex"} alignItems={"center"} width={"20%"}>
+				<Heading size={['md','sm','md','xl','xl']}>Portfolio</Heading>
+				<img  src={sign} alt="" />	
+				</Box>	
 			{!isMobile ? <nav className="navbar">
 					<a href="#home" style={{ "--i": 1 }} className="big-nav active">
 						Home
