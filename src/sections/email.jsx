@@ -4,7 +4,7 @@ import '../App.css';
 function Email() {
   const [state, handleSubmit] = useForm("myyrdvjw");
   if (state.succeeded) {
-      return <p style={{fontSize: "20px"}}>Thanks for joining!</p>;
+      return <p style={{fontSize: "20px", color: "teal", fontWeight: "bold"}}>Thanks for joining!</p>;
   }
   return (
       <form onSubmit={handleSubmit}>
