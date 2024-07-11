@@ -169,7 +169,7 @@ const App = () => {
 								<h3>2020</h3>
 								<h3>Rose Mary Hr.Src. School, Bhopal</h3>
 								<h4>Subject: Science</h4>
-								<h4>10th MP Board</h4>
+								<h4>12th MP Board</h4>
 								<h4>Percentage: 75.6%</h4>
 							</div>
 
@@ -179,10 +179,10 @@ const App = () => {
 									style={{ color: "#00eeff" }}
 								></i>
 								<h2>Engineering</h2>
-								<h3>2020-Present</h3>
+								<h3>2020-2024</h3>
 								<h3>SIRT, Bhopal</h3>
 								<h4>B.Tech, Computer Science Engineering</h4>
-								<h4>CGPA: 8.62</h4>
+								<h4>CGPA: 8.35</h4>
 							</div>
 
 							<div className="edu">
@@ -191,7 +191,7 @@ const App = () => {
 									style={{ color: "#00eeff" }}
 								></i>
 								<h2>Course</h2>
-								<h3>2023-Present</h3>
+								<h3>2023-2024</h3>
 								<h3>Masai School, Bangalore</h3>
 								<h4>Full Stack Web Developer</h4>
 							</div>
