@@ -10,6 +10,7 @@ import express from "../assets/express.jpg";
 import redux from "../assets/redux.svg";
 import mui from "../assets/material-ui.svg";
 import chakraUi from "../assets/chakra-ui.svg"; 
+import tailwind from "../assets/download.png";
 import json from "../assets/json.svg";
 import postman from "../assets/postman.svg";
 import git from "../assets/git.svg";
@@ -35,6 +36,7 @@ const Skills = () => {
     { img: redux, name: "Redux" },
     { img: mui, name: "Material UI" },
     { img: chakraUi, name: "Chakra UI" },
+    {img: tailwind, name: "Tailwind CSS"},
     { img: json, name: "Json" },
     { img: vite, name: "Vite" },
   ];
@@ -43,7 +45,6 @@ const Skills = () => {
     { img: git, name: "Git" },
     { img: bash, name: "Bash" },
     { img: vsCode, name: "VS Code" },
-    
     { img: npm, name: "NPM" },
   ]
   return (
